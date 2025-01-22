@@ -32,6 +32,19 @@ public class ConsecutiveDuplicate {
                 System.out.println("The Array does not consist Consecutive Duplicate elements");
             }
             T = A[j];
+            
         }
+        // two check consecutive duplicate just check index and index+1
+            // start from 0 and end before length-1;
+            // if array of size 6
+            // comparison between   0 and 1
+            //                      1 and 2
+            //                      2 and 3 
+            //                      3 and 4
+            //                      4 and 5
+            for(int i=0;i<array.length-1;i++){
+                if(array[i] == array[i+1]){
+                    return true;
+                }
     }
 }
